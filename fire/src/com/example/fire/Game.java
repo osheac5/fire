@@ -10,7 +10,7 @@ public class Game extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.activity_game);
+		setContentView(R.layout.activity_game); //living that yolo life
 	}
 	
 	public void gameOver(View view) {
