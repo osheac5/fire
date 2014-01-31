@@ -7,20 +7,33 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/gameoverbg"
     tools:context=".GameOver" >
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal" >
-
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#99ffffff" >
+        
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center"
             android:text="@string/game_over"
-            android:textColor="#B20000"
+            android:textColor="#000000"
             android:textSize="50sp"
+            android:typeface="serif" />
+
+        <TextView
+            android:id="@+id/scoreText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/game_over"
+            android:textColor="#000000"
+            android:textSize="30sp"
             android:typeface="serif" />
     </LinearLayout>
 
@@ -33,12 +46,20 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="startGame"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:background="#99000000"
+            android:textColor="#ffe1b1f4"
             android:text="@string/play_again" />
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:onClick="openHighScores"
+            android:layout_margin="5dp"
+            android:padding="5dp"
+            android:background="#99000000"
+            android:textColor="#ffe1b1f4"
             android:text="@string/high_scores" />
     </LinearLayout>
 
